@@ -3,12 +3,13 @@
 $im = imagecreatetruecolor(200, 200);
 $white = imagecolorallocate($im, 255, 255, 255);
 
-$deployment = getenv("COLOR");
+//$deployment = getenv("COLOR");
+$deployment='green';
 
 if ( $deployment == 'blue') {
   $color = imagecolorallocate($im, 0, 0, 255);
 } elseif ($deployment == 'green')  {
-  $color = imagecolorallocate($im, 0, 255, 0);
+  $color = imagecolorallocate($im, 25, 255, 0);
 } else {
   $color = imagecolorallocate($im, 0, 0, 255);
 }
